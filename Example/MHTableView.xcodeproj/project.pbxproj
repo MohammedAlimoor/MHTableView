@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04DB04D320566AF400CAADE2 /* ExampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB04D220566AF400CAADE2 /* ExampleTableViewCell.swift */; };
 		5E34057121CC375222356D89 /* Pods_MHTableView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8847A6C3A7D5D34DAE7104C /* Pods_MHTableView_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -28,9 +29,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04DB04D220566AF400CAADE2 /* ExampleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTableViewCell.swift; sourceTree = "<group>"; };
 		1AAD32B33EE03427275D4129 /* Pods_MHTableView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MHTableView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1D9B0CA6F964E78BDB8A0A83 /* MHTableView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MHTableView.podspec; path = ../MHTableView.podspec; sourceTree = "<group>"; };
-		369CBAAF4DE572E30B4694F2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		1D9B0CA6F964E78BDB8A0A83 /* MHTableView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MHTableView.podspec; path = ../MHTableView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		369CBAAF4DE572E30B4694F2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* MHTableView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MHTableView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,7 +44,7 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		842A6363966C6664F486177D /* Pods-MHTableView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHTableView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MHTableView_Example/Pods-MHTableView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		9E5FF65E8675CF80B8D0ABF0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		9E5FF65E8675CF80B8D0ABF0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		A1AF72BC39EFCBD1A3954A4B /* Pods-MHTableView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHTableView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MHTableView_Tests/Pods-MHTableView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C14C17158F0E8393A74DABB1 /* Pods-MHTableView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHTableView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-MHTableView_Example/Pods-MHTableView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		EAC1CA6C3D90800B5E7B9D5E /* Pods-MHTableView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MHTableView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MHTableView_Tests/Pods-MHTableView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				04DB04D220566AF400CAADE2 /* ExampleTableViewCell.swift */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for MHTableView";
@@ -215,6 +218,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = RRTH99D5DC;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
@@ -377,6 +381,7 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				04DB04D320566AF400CAADE2 /* ExampleTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,6 +527,7 @@
 			baseConfigurationReference = 842A6363966C6664F486177D /* Pods-MHTableView_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RRTH99D5DC;
 				INFOPLIST_FILE = MHTableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -537,6 +543,7 @@
 			baseConfigurationReference = C14C17158F0E8393A74DABB1 /* Pods-MHTableView_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = RRTH99D5DC;
 				INFOPLIST_FILE = MHTableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
