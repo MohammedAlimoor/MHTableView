@@ -1,0 +1,22 @@
+{
+  "name": "MHTableView",
+  "version": "0.1.0",
+  "summary": "A short description of MHTableView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/MohammedAlimoor/MHTableView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "MohammedAlimoor": "ameral.java@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/MohammedAlimoor/MHTableView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "MHTableView/Classes/**/*"
+}

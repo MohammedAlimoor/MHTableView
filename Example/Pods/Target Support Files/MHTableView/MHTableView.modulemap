@@ -1,0 +1,6 @@
+framework module MHTableView {
+  umbrella header "MHTableView-umbrella.h"
+
+  export *
+  module * { export * }
+}

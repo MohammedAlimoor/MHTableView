@@ -1,0 +1,6 @@
+framework module Pods_MHTableView_Example {
+  umbrella header "Pods-MHTableView_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
