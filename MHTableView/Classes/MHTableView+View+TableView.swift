@@ -2,8 +2,10 @@
 //  MHTableView+View+TableView.swift
 //  MHTableView
 //
-//  Created by mac on 3/12/18.
 //
+//  Created by MohammedAlimoor on 03/12/2018.
+//  Copyright (c) 2018 MohammedAlimoor. All rights reserved.
+///
 
 import Foundation
 extension UITableView {

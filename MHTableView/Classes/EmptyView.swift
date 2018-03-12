@@ -1,10 +1,8 @@
+//  MHTableView
 //
-//  NewOrderView.swift
-//  Mafhome
-//
-//  Created by mac on 6/17/17.
-//  Copyright © 2017 mac. All rights reserved.
-//
+//  Created by MohammedAlimoor on 03/12/2018.
+//  Copyright (c) 2018 MohammedAlimoor. All rights reserved.
+/
 
 import UIKit
 
