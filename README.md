@@ -30,6 +30,19 @@ it, simply add the following line to your Podfile:
 pod 'MHTableView'
 ```
 
+## Usage
+### Only Text
+```swift
+ tableview.showEmpty(text: "Sorry there is no data")
+```
+
+###  Text & button with callback
+```swift
+tableview.showEmpty(text: "Connection Error", buttonText: "Try") {
+self.tableview.showEmpty(text: "Yaaaaa :)")
+}
+```
+
 ## Author
 
 MohammedAlimoor, ameral.java@gmail.com
