@@ -14,6 +14,12 @@ Easier way to Control empty States UITableView ,UICollectionview
 - Swift 4.0
 - iOS 8.0 or later
 
+## Features
+- Extension :) for UITableView , UICollectionview
+- support custom view
+- Please wait or  IndicatorView
+-and more :)
+
 
 ## Example
 
@@ -39,10 +45,28 @@ pod 'MHTableView'
 ###  Text & button with callback
 ```swift
 tableview.showEmpty(text: "Connection Error", buttonText: "Try") {
-self.tableview.showEmpty(text: "Yaaaaa :)")
+    // callback here
 }
 ```
 
+###  Text & button & image with callback
+```swift
+tableview.showEmpty(text: "Connection Error", buttonText: "Try", image: #imageLiteral(resourceName: "error.png")) {
+// callback here
+}
+```
+###  Please wait or  IndicatorView
+```swift
+tableview.showEmptyIndicatorView(text: "Loading", showText: true)
+
+```
+
+###  custom view
+```swift
+ let  rec =  CGRect(x: 0, y: 0, width: self.bounds.size.width, height: self.bounds.size.height)
+       let view = View(frame: rec) // your   custom view
+tableview.showEmpty(emptyview: view)
+```
 ## Author
 
 MohammedAlimoor, ameral.java@gmail.com
