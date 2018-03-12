@@ -18,6 +18,7 @@
                 <outlet property="btn_Status" destination="kg8-YU-abv" id="eWv-4N-tjI"/>
                 <outlet property="image_Status" destination="0kt-t3-Ti2" id="2ZH-1K-4oT"/>
                 <outlet property="lbl_Status" destination="nbC-HC-vGz" id="7lj-Ba-ObU"/>
+                <outlet property="progressIndicatorView" destination="JUP-wF-hV7" id="zP1-Gd-kVF"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

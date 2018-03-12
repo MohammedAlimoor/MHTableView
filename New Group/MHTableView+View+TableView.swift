@@ -7,7 +7,7 @@
 
 import Foundation
 extension UITableView {
-    var emptyview: EmptyView {
+  public  var emptyview: EmptyView {
         let  rec =  CGRect(x: 0, y: 0, width: self.bounds.size.width, height: self.bounds.size.height)
         let temp = EmptyView(frame: rec)
         
@@ -15,7 +15,7 @@ extension UITableView {
     }
     
  
-    func  showEmpty(text:String){
+   public func  showEmpty(text:String){
           hideEmpty()
         self.emptyview.lbl_Status.isHidden = false
         self.emptyview.image_Status.isHidden = true
@@ -26,7 +26,7 @@ extension UITableView {
         self.backgroundView = self.emptyview
         
     }
-    func  showEmpty(text:String,
+   public func  showEmpty(text:String,
                     buttonText:String,ReloadClickBlock : @escaping (() -> Void)){
           hideEmpty()
         self.emptyview.lbl_Status.isHidden = false
@@ -38,7 +38,7 @@ extension UITableView {
         self.emptyview.ReloadClickBlock = ReloadClickBlock
         self.backgroundView = self.emptyview
     }
-    func  showEmpty(text:String,
+  public  func  showEmpty(text:String,
                     buttonText:String,image:UIImage,ReloadClickBlock : @escaping (() -> Void)){
         hideEmpty()
         self.emptyview.lbl_Status.isHidden = false
@@ -52,7 +52,7 @@ extension UITableView {
         self.backgroundView = self.emptyview
     }
   
-    func hideEmpty(){
+  public  func hideEmpty(){
         for v in (self.backgroundView?.subviews)!{
             v.removeFromSuperview()
         }

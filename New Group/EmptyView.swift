@@ -8,15 +8,15 @@
 
 import UIKit
 
-class EmptyView: UIView {
+public class EmptyView: UIView {
 
 
-    @IBOutlet weak var lbl_Status: UILabel!
-    @IBOutlet weak var image_Status: UIImageView!
-    @IBOutlet weak var btn_Status: UIButton!
-    @IBOutlet weak var progressIndicatorView: UIActivityIndicatorView!
+    @IBOutlet public weak var lbl_Status: UILabel!
+    @IBOutlet public weak var image_Status: UIImageView!
+    @IBOutlet public weak var btn_Status: UIButton!
+    @IBOutlet  public weak var progressIndicatorView: UIActivityIndicatorView!
 
-    var ReloadClickBlock : (() -> Void)?;
+     var ReloadClickBlock : (() -> Void)?;
     
     
     var view: UIView!
@@ -38,7 +38,7 @@ class EmptyView: UIView {
         //        view.addGestureRecognizer(tapRecognizer1)
         
     }
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         
         super.init(coder: aDecoder)
         xibSetup()
