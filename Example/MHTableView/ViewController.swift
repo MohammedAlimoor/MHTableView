@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import MHTableView
 class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableview: UITableView!
 
@@ -23,6 +23,8 @@ class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSou
         cell.lbl_name.text = "item \(indexPath.row)"
         cell.lbl_number.text = "\(indexPath.row)"
 
+        
+        
         return cell
     }
     
@@ -33,22 +35,34 @@ class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSou
     }
 
     @IBAction func Empty1Click(_ sender: Any) {
-        
         count = 0
         tableview.reloadData()
         
+          tableview.showEmpty(text: "")
+        tableview.showEmpty(text: "Sorry there is no data")
+
     }
     @IBAction func Empty2Click(_ sender: Any) {
         count = 0
         tableview.reloadData()
+        tableview.showEmpty(text: "Connection Error", buttonText: "Try") {
+            self.tableview.showEmpty(text: "Yaaaaa :)")
+        }
+
     }
     @IBAction func Empty3Click(_ sender: Any) {
         count = 0
         tableview.reloadData()
+        tableview.showEmpty(text: "Connection Error", buttonText: "Try", image: #imageLiteral(resourceName: "error.png")) {
+            self.tableview.showEmpty(text: "Yaaaaa :)")
+
+        }
         
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableview.tableFooterView = UIView()
+
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -57,5 +71,8 @@ class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSou
         // Dispose of any resources that can be recreated.
     }
 
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
+    }
 }
 

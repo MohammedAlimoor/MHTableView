@@ -9,8 +9,11 @@
 /* Begin PBXBuildFile section */
 		0134CFBC3B6747D58EE2D7F240333CD6 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38F7EB4258060BAA361D06EF1B16D9B /* Example.swift */; };
 		022DD00DF0B6B25016CCFFB0D07A5891 /* QuickSelectedTestSuiteBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C7D6328493B73EF741AC61F4CEF01E /* QuickSelectedTestSuiteBuilder.swift */; };
+		044B65EA2056830300BEEF47 /* View+UICollectionview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044B65E92056830300BEEF47 /* View+UICollectionview.swift */; };
 		04DB04CE2056641B00CAADE2 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB04CD2056641A00CAADE2 /* EmptyView.swift */; };
 		04DB04D1205665F600CAADE2 /* MHTableView+View+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB04D0205665F600CAADE2 /* MHTableView+View+TableView.swift */; };
+		04DB04DF2056786E00CAADE2 /* loading.png in Resources */ = {isa = PBXBuildFile; fileRef = 04DB04CA2056624300CAADE2 /* loading.png */; };
+		04DB04E02056786E00CAADE2 /* EmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04DB04CF2056642500CAADE2 /* EmptyView.xib */; };
 		075B5B5F19D60F3C018C3E83BEC98236 /* MHTableView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 055C5C0173169A051B6B84590556492C /* MHTableView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A2CA8B0DD7E300ABFCF1956E6B58248 /* Nimble.h in Headers */ = {isa = PBXBuildFile; fileRef = 2727DBDF3F41A52F002F6B1992165881 /* Nimble.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A6953BDA830BC7D6DFC6E7C39BE1989 /* Pods-MHTableView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 247B55E714AB423A572188451DE45A65 /* Pods-MHTableView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -154,6 +157,7 @@
 
 /* Begin PBXFileReference section */
 		014CC71E572C5CC14ADFA82A8B7B97DC /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = Sources/Nimble/Expression.swift; sourceTree = "<group>"; };
+		044B65E92056830300BEEF47 /* View+UICollectionview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+UICollectionview.swift"; sourceTree = "<group>"; };
 		04DB04CA2056624300CAADE2 /* loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading.png; sourceTree = "<group>"; };
 		04DB04CD2056641A00CAADE2 /* EmptyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 		04DB04CF2056642500CAADE2 /* EmptyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmptyView.xib; sourceTree = "<group>"; };
@@ -360,6 +364,7 @@
 				04DB04CF2056642500CAADE2 /* EmptyView.xib */,
 				04DB04CD2056641A00CAADE2 /* EmptyView.swift */,
 				04DB04D0205665F600CAADE2 /* MHTableView+View+TableView.swift */,
+				044B65E92056830300BEEF47 /* View+UICollectionview.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -370,6 +375,15 @@
 				04DB04CA2056624300CAADE2 /* loading.png */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		04DB04DB2056756000CAADE2 /* MHTableView */ = {
+			isa = PBXGroup;
+			children = (
+				04DB04C92056621600CAADE2 /* Assets */,
+				04DB04C8205661E800CAADE2 /* Classes */,
+			);
+			path = MHTableView;
 			sourceTree = "<group>";
 		};
 		120C658EF9FCA3B7DD9C45771518C2EC /* Pods-MHTableView_Tests */ = {
@@ -514,8 +528,7 @@
 		71E16C07E56EFFB94AF9121DE13C10FA /* MHTableView */ = {
 			isa = PBXGroup;
 			children = (
-				04DB04C92056621600CAADE2 /* Assets */,
-				04DB04C8205661E800CAADE2 /* Classes */,
+				04DB04DB2056756000CAADE2 /* MHTableView */,
 				254F78642BE0E9B9A10E6DA11075DC3A /* Pod */,
 				755C3323D8B4887C1CB5E6216FB2171B /* Support Files */,
 			);
@@ -725,6 +738,7 @@
 				3D6B93508E07422119D0BBE3E1DC6739 /* Sources */,
 				FB9C0AD23BB94AED8D657716D456622F /* Frameworks */,
 				BC9CD82667C2B0612109F6FA6AFA75D3 /* Headers */,
+				04DB04DE2056786600CAADE2 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -836,6 +850,18 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		04DB04DE2056786600CAADE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04DB04DF2056786E00CAADE2 /* loading.png in Resources */,
+				04DB04E02056786E00CAADE2 /* EmptyView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1ED3BB19165273314633B7D3476DEE15 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -943,6 +969,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04DB04CE2056641B00CAADE2 /* EmptyView.swift in Sources */,
+				044B65EA2056830300BEEF47 /* View+UICollectionview.swift in Sources */,
 				04DB04D1205665F600CAADE2 /* MHTableView+View+TableView.swift in Sources */,
 				F5A8B043ADCFA0880560215611208CC5 /* MHTableView-dummy.m in Sources */,
 			);

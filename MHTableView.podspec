@@ -22,19 +22,19 @@ TODO: Add long description of the pod here.
                        DESC
 
   s.homepage         = 'https://github.com/MohammedAlimoor/MHTableView'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.screenshots     = 'https://i.gyazo.com/d78e71f948fb20e8ab9c6c774ac33fab.gif'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'MohammedAlimoor' => 'ameral.java@gmail.com' }
   s.source           = { :git => 'https://github.com/MohammedAlimoor/MHTableView.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.social_media_url = 'https://twitter.com/alimoormohammed'
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'MHTableView/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'MHTableView' => ['MHTableView/Assets/*.png']
-  # }
+   s.resource_bundles = {
+     'MHTableView' => ['MHTableView/Assets/*.png']
+   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

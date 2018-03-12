@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		04DB04D320566AF400CAADE2 /* ExampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB04D220566AF400CAADE2 /* ExampleTableViewCell.swift */; };
+		04DB04D42056718A00CAADE2 /* MHTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04DB04D52056718A00CAADE2 /* MHTableView.framework */; };
+		04DB04E220567DF800CAADE2 /* error.png in Resources */ = {isa = PBXBuildFile; fileRef = 04DB04E120567DF700CAADE2 /* error.png */; };
 		5E34057121CC375222356D89 /* Pods_MHTableView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8847A6C3A7D5D34DAE7104C /* Pods_MHTableView_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -30,6 +32,8 @@
 
 /* Begin PBXFileReference section */
 		04DB04D220566AF400CAADE2 /* ExampleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTableViewCell.swift; sourceTree = "<group>"; };
+		04DB04D52056718A00CAADE2 /* MHTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MHTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		04DB04E120567DF700CAADE2 /* error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = error.png; sourceTree = "<group>"; };
 		1AAD32B33EE03427275D4129 /* Pods_MHTableView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MHTableView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D9B0CA6F964E78BDB8A0A83 /* MHTableView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MHTableView.podspec; path = ../MHTableView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		369CBAAF4DE572E30B4694F2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04DB04D42056718A00CAADE2 /* MHTableView.framework in Frameworks */,
 				5E34057121CC375222356D89 /* Pods_MHTableView_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,6 +100,7 @@
 		607FACD21AFB9204008FA782 /* Example for MHTableView */ = {
 			isa = PBXGroup;
 			children = (
+				04DB04E120567DF700CAADE2 /* error.png */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -145,6 +151,7 @@
 		A10763960F839764ECCF5012 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				04DB04D52056718A00CAADE2 /* MHTableView.framework */,
 				F8847A6C3A7D5D34DAE7104C /* Pods_MHTableView_Example.framework */,
 				1AAD32B33EE03427275D4129 /* Pods_MHTableView_Tests.framework */,
 			);
@@ -254,6 +261,7 @@
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				04DB04E220567DF800CAADE2 /* error.png in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

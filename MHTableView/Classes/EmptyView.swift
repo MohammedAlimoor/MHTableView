@@ -18,7 +18,7 @@ public class EmptyView: UIView {
 
      var ReloadClickBlock : (() -> Void)?;
     
-    
+       
     var view: UIView!
     
     

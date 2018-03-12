@@ -6,14 +6,9 @@
 //
 
 import Foundation
-extension UITableView {
-//  public  var emptyview: EmptyView {
-//        let  rec =  CGRect(x: 0, y: 0, width: self.bounds.size.width, height: self.bounds.size.height)
-//        let temp = EmptyView(frame: rec)
-//
-//        return temp
-//    }
-//
+import UIKit
+extension UICollectionView{
+
  
     // show empty with text
    public func  showEmpty(text:String){
@@ -71,6 +66,25 @@ extension UITableView {
         self.backgroundView = emptyview
     }
   
+    // show empty with IndicatorView
+    public func  showEmptyIndicatorView(text:String,showText:Bool){
+        
+        
+        let  rec =  CGRect(x: 0, y: 0, width: self.bounds.size.width, height: self.bounds.size.height)
+        hideEmpty()
+        let emptyview = EmptyView(frame: rec)
+        emptyview.lbl_Status.isHidden = showText
+        emptyview.lbl_Status.text = text
+        emptyview.image_Status.isHidden = true
+        emptyview.btn_Status.isHidden = true
+        emptyview.progressIndicatorView.isHidden = false
+        
+        
+        emptyview.lbl_Status.text = text
+        self.backgroundView = emptyview
+        
+    }
+    
     // show empty with custom view
     public func  showEmpty(emptyview:UIView){
         hideEmpty()
